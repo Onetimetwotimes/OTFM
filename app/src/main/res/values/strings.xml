@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OTFM</string>
+    <string name="action_manageStations">Manage Stations</string>
+    <string name="title_activity_manage_stations">Stations</string>
+</resources>

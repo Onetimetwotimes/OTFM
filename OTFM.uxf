@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>14</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>112</y>
+      <w>168</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>ExoPlayer library</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1176</x>
+      <y>56</y>
+      <w>406</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Features
+-
+Select radio stations from a list
+Add radio stations to the list
+list persistence
+play audio from internet radio stations
+mute/stop|start
+next|prev|scan|select
+now playing info
+
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>126</x>
+      <y>196</y>
+      <w>378</w>
+      <h>420</h>
+    </coordinates>
+    <panel_attributes>MainActivity
+-
+UpdateViews
+onPlayClicked
+onStopClicked
+onNextClicked
+onPrevClicked
+onScanClicked
+-
+stations dropdown
+manage stations button
+next button
+previous button
+start/stop button
+scan button</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1218</x>
+      <y>378</y>
+      <w>322</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>User provides name and URL
+Dropdown has names
+Player refers to hashmap
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>448</y>
+      <w>322</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>Stations
+-
+-SharedPreferences
+-SharedPreferences.Editor
+
++getStationURL(name:string):string
++addStation(name:string,url:string)
++putStation(name:string,url:string)
++removeStation(name:string)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>196</y>
+      <w>364</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>RadioPlayer
+-
+-player
++pause
++play
++setMediaSource
++getMediaInfo():String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>434</y>
+      <w>154</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>182</y>
+      <w>154</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>686</x>
+      <y>140</y>
+      <w>42</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>126</x>
+      <y>644</y>
+      <w>378</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>ManageStationsActivity
+-
+makeNewStation
+editStation
+populateStations
+returnToMainActivity
+-
+Add station button
+Configure station menu
+Return to mainActivity
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>630</y>
+      <w>154</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
